@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body {
+    min-height: 100vh;
+    
+    font-size: calc(50% + 40%);
+}
+header {
+    background-color: #fff;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2); 
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #83c41b, 0.1;
+   z-index: 99999;
+}
+header .nama {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: black;
+    font-weight: 500;
+    border-radius: 20px;
+}
+header ul li a:hover, 
+header ul li a.active 
+{
+    background: #405685;
+    color: #fff;
+}
+section {
+    padding: calc(50% - 20%) 40px ;
+    text-align: justify;
+    text-justify: inter-word;
+    
+}
+section h2 {
+    text-align: center;
+    line-height: 25px;
+    padding: 25px;
+}
+section #aboutme {
+    
+}
+section ul {
+    line-height: 40px;
+    display: flex;
+    list-style:none;
+    justify-content: space-between;
+    width: 100%;
+    background-color: lightblue;
+    border-radius: 20px;
+    padding: 0px 6px;
+}
+section ul a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: black;
+    font-weight: 500;
+    border-radius: 20px;
+}
+section ul a:hover {
+    background: #405685;
+    color: #fff;
+}
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0 ,0 , 0.1 );
+    transition: transform 0.3s ease-in-out;
+}
+section.s2 {
+    padding: 0px 40px;
+}
+footer {
+    background-color: lightblue;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+#contact {
+    padding: 40px;
+    background-color: #f5f5f5;
+    line-height: 40px;
+}
+
+#contactForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2px;
+    
+}
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+button {
+    background-color: lightblue;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+#portofolio {
+    background-color: #fff;
+}
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+    header {
+        padding: 20px 40px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    header ul {
+        display: none;
+    }
+    section {
+        padding: calc(50% - 110px) 40px ;
+    }
+}
+//*@media screen and (min-width: 601px) {
+    body {
+        font-size: calc(50% + 20px);
+        width: 100%;
+    }
+    header {
+        
+        padding: 20px 40px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        line-height: calc(50% + 50px);
+    }
+    header .nama {
+        
+        letter-spacing: 1px;
+        line-height: 25px;
+        font-size: calc(50% + 20px);
+    }
+    header ul {
+        width: calc(80% - 20px);
+        text-align: center;
+    }
+    header ul li {
+        font-size: calc(50% + 55%);
+        list-style: none;
+        width: 100%;
+        margin-left: 0px;
+        padding: 6px calc(10% - 10px);
+        align-items: center;
+    }
+    header ul li a {
+        text-decoration: none;
+        text-align: justify;
+        padding: 6px calc(50% + 10px);
+        color: black;
+        font-weight: 500;
+        border-radius: 20px;
+    }
+    section #aboutme {
+        padding: 50px ;
+        font-size: calc(50% + 15px);
+       
+    }
+    #portofolio h2 {
+        text-align: center;
+        line-height: 50px;
+        padding: 20px;
+        font-size: calc(5% + 25px);
+    }
+    section ul {
+        font-size: calc(50% + 12px);
+        padding: 0px 50px;
+        justify-content: space-evenly;
+    }
+}
+
+       
