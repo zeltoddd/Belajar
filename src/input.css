@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.show {
+    background-color:rgba(249, 115, 22, .7);
+}
+
+.show div {
+    color: white;
+}
+.show div span {
+    display: none;
+}
+.show span {
+    display: block;
+    color: white;
+}
+.show div a {
+    color:white;
+}
+
+.show div button {
+    color: white;
+}
+.show div button:hover {
+    background-color: rgba(249, 115, 22, .1);
+}

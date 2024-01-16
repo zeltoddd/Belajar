@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // current scroll position
         const currentScrollPos = window.pageYOffset;
 
-         if (prevScrollPos > currentScrollPos) {
+         if (prevScrollPos < currentScrollPos) {
          // user has scrolled up
         document.querySelector('.navbar').classList.add('show');
             } else {
