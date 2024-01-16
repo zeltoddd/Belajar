@@ -962,7 +962,7 @@ video {
 }
 
 .show div button:hover {
-  background-color: rgba(249, 115, 22, .1);
+  background-color: rgba(249, 115, 22, .0);
 }
 
 .before\:absolute::before {
