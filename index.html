@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="src/output.css">
 </head>
 <body>
-    <header class="fixed w-full z-50 navbar">
+    <header id="navbar" class="fixed w-full z-50">
         <nav class="show flex items-center justify-between flex-wrap bg-orange-500 p-4 backdrop-blur-3xl bg-opacity-70">
             <div class="flex items-center flex-shrink-0 text-white mr-6">
                 <span class=" font-semibold text-xl tracking-tight onscrol">Ziyad Robith Fuqoha</span>
             </div>
             <div class="block lg:hidden">
-                <button id="nav-icon3" class="grid items-center px-3 py-2 rounded-full text-orange-200 border-orange-400 hover:text-black hover:border-white">
-                    <span class="w-3 h-px bg-orange-200"></span>
-                    <span class="w-3 h-px bg-orange-200 mt-1"></span>
-                    <span class="w-3 h-px bg-orange-200 mt-1"></span>
-                </button>
+                <button id="toggle-navbar" type="button" class="inline-flex items-center justify-center p-2 w-7 h-7 text-sm text-white rounded-lg hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-gray-200 aria-controls="navbar-hamburger" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                  </button>
             </div>
-            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
+            <div id="nav-items" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
                 <div class="text-sm lg:flex-grow">
                     <a href="#home" class="block mt-4 lg:inline-block lg:mt-0 text-orange-200 hover:text-white mr-4">
                         Home
