@@ -45,4 +45,26 @@ document.addEventListener('DOMContentLoaded', function() {
             }
     
         });
+        function emailSend(){
+            var name=document.getElementById("name").value;
+            var email=document.getElementById("email").value;
+            var message=document.getElementById("message").value;
+            
+            console.log(name);
+            console.log(email);
+            console.log(message);
+
+
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "ibawa1607@gmail.com",
+            Password : "2742F74AE2277B57360F3FD71FECAB9D77B8",
+            To : "zydrobiiith@student.uns.ac.id",
+            From : "ibawa1607@gmail.com",
+            Subject : "Jalinan Patner Kerja",
+            Body : message
+        }).then(
+          message => alert(message)
+        );
+        }
 });
