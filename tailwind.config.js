@@ -15,6 +15,9 @@ module.exports = {
           '100%': { backgroundColor: theme('colors.transparent') },
         },
       }),
+      parallax: {
+        
+      }
 
     },
   },
